@@ -1,3 +1,30 @@
+<div align="center">
+
+# 影记 ClipScribe：本地短视频转写与故事卡流水线 · douyin-story-pipeline
+
+**输入公开视频链接，在 Windows 本机自动完成限速下载、whisper.cpp 离线转写与结构化故事卡生成。**
+
+</div>
+
+面向 Windows 的多平台公开视频素材研究工具。提供图形启动器（YingJiClipScribe.exe）与 PowerShell 脚本双入口，串联 yt-dlp 元数据及视频获取、FFmpeg 音频提取、本地语音转写与 Markdown 故事分析卡生成。
+
+## 值得关注的技术
+
+- 整合 yt-dlp + FFmpeg + whisper.cpp + Silero VAD，转写与卡片生成全流程在 Windows 本地完成
+- 内置每轮批量硬限制（最高 20 条）、15–35 秒随机请求间隔与 archive 自动去重机制
+- 自动生成区分来源、事实、冲突、推论与改编方案的 Markdown 故事卡，并提供 GUI 与 CMD 双入口
+
+## 当前进度
+
+平台可用性取决于 yt-dlp 当前提取器和访问规则，未逐个平台重新验收；转写使用本地模型，下载仍需联网。
+
+## 使用与开发
+
+展开下方指南查看安装、运行命令、依赖、限制及许可证。本文整理依据仓库已有内容，本轮未重新执行项目功能验收。
+
+<details>
+<summary><strong>展开完整使用指南、技术说明与历史记录</strong></summary>
+
 # 影记 ClipScribe
 
 一个面向 Windows 的本地公开视频素材研究工具：将你选择的公开视频下载到本地，转写语音，并生成结构化故事卡片，供 AI 或人工进一步核实、分析和原创改编。
@@ -213,3 +240,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
 ## 许可证
 
 项目脚本使用 [MIT License](LICENSE)。视频、模型、转写和第三方工具不包含在该许可证中，各自遵循其原始许可与权利归属。
+
+
+</details>
