@@ -1,6 +1,6 @@
 <div align="center">
 
-# 影记 ClipScribe：本地短视频转写与故事卡流水线 · douyin-story-pipeline
+# 影记｜ClipScribe
 
 **输入公开视频链接，在 Windows 本机自动完成限速下载、whisper.cpp 离线转写与结构化故事卡生成。**
 
